@@ -1,0 +1,13 @@
+diff --git a/Godbert/ViewModels/MainViewModel.cs b/Godbert/ViewModels/MainViewModel.cs
+index 14c647d..c06cf0e 100644
+--- a/Godbert/ViewModels/MainViewModel.cs
++++ b/Godbert/ViewModels/MainViewModel.cs
+@@ -40,7 +40,7 @@ public class MainViewModel : ObservableBase {
+         public MainViewModel() {
+             if (!App.IsValidGamePath(Properties.Settings.Default.GamePath))
+                 return;
+-            var realm = new ARealmReversed(Properties.Settings.Default.GamePath, SaintCoinach.Ex.Language.English);
++            var realm = new ARealmReversed(Properties.Settings.Default.GamePath, SaintCoinach.Ex.Language.ChineseSimplified);
+             Initialize(realm);
+         }
+ 
